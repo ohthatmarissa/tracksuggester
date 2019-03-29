@@ -1,7 +1,24 @@
 $(document).ready(function() {
+$("form#questions".submit(function(event) {
+  var design = $("input:radio[id=design]:checked").val();
+  var customers = $("input:radio[id=customers]:checked").val();
+  var environment = $("input:radio[name=environment]:checked").val();
+  var groups = $("input:radio[name=groups]:checked").val();
+  var projects = $("input:radio[name=projects]:checked")
+  var course;
 
-var design = $("input:radio[design]:checked").val();
+    if (design === "yes" && environment === "startup") {
+      if (project === "elaborate") {
+      course = "Ruby/Rails";
+    } else if (project === "mobile") {
+      course = "Java";
+    }
+  }
+alert (check)
+  $("#course").text("Your best course match is " + course + "!");
+    $("#course").show();
 
-var environment = $("environment").val();
+    event.preventDefault();
 
+  });
 });
