@@ -4,7 +4,7 @@ $(document).ready(function() {
     var customers = $("input:radio[id=customers]:checked").val();
     var environment = $("input:radio[name=environment]:checked").val();
     var groups = $("input:radio[name=groups]:checked").val();
-    var projects = $("input:radio[name=projects]:checked")
+    var projects = $("input:radio[name=projects]:checked").val();
     var course;
 
       if (design === "yes" && environment === "startup") {
