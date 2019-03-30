@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("form#questions".submit(function(event) {
+  $("form#questions").submit(function(event) {
     var design = $("input:radio[id=design]:checked").val();
     var customers = $("input:radio[id=customers]:checked").val();
     var environment = $("input:radio[name=environment]:checked").val();
